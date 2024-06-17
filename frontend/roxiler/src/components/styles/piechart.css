@@ -1,0 +1,30 @@
+/* Pie chart container styles */
+.pie-chart-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.pie-chart-container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00796b;
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pie-chart-container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .pie-chart-container {
+        max-width: 90%;
+    }
+}

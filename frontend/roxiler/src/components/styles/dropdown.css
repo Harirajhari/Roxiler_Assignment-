@@ -1,0 +1,36 @@
+/* styles/dropdown.css */
+
+.month-selector, .year-selector {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .month-selector label, .year-selector label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+  }
+  
+  .month-selector select, .year-selector select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .month-selector select:focus, .year-selector select:focus {
+    border-color: #3e8e41;
+    box-shadow: 0 0 5px rgba(62, 142, 65, 0.5);
+    outline: none;
+  }
+  
+  .month-selector select:hover, .year-selector select:hover {
+    border-color: #3e8e41;
+  }
+  

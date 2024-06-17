@@ -1,0 +1,30 @@
+/* Chart container styles */
+.chart-container {
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%; /* Adjusted to ensure responsiveness */
+  max-width: 800px;
+  min-width: 500px; /* Ensures it doesn't get too small */
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  color: #333;
+  text-align: center;
+}
+
+.chart-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #00796b;
+}
+
+.chart-container canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Bar chart specific styles */
+.barchart {
+  margin: 20px 0;
+}

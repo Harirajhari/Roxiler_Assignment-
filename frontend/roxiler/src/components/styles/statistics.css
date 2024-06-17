@@ -1,0 +1,50 @@
+/* Add this to your CSS file, e.g., App.css or statistics.css */
+
+.statistics-container {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #e0f7fa, #80deea);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
+  
+  .statistics-container h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #00796b;
+    text-align: center;
+  }
+  
+  .statistics {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .statistic-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    background-color: #ffffff;
+    border: 1px solid #b2dfdb;
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+  }
+  
+  .statistic-item span:first-child {
+    font-weight: bold;
+    color: #00796b;
+  }
+  
+  .statistic-item span:last-child {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00796b;
+  }
+  
+  .statistic-item:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
