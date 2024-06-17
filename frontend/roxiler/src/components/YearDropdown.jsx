@@ -1,6 +1,5 @@
-// components/YearDropdown.jsx
 import React from 'react';
-import "./styles/dropdown.css"; // Ensure this path matches your project structure
+import "./styles/dropdown.css";
 
 const YearDropdown = ({ selectedYear, handleYearChange }) => {
   const years = [];

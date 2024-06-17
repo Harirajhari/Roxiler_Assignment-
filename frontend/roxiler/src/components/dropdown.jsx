@@ -1,4 +1,3 @@
-// components/Dropdown.jsx
 import React from 'react';
 import "./styles/dropdown.css"
 

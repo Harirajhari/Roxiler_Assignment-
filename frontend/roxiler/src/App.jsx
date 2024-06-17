@@ -55,8 +55,7 @@ function App() {
 
           console.log('Response from server:', response.data);
 
-          // Extract the data array from the response
-          const data = response.data[selectedYear]; // assuming the data is under the selected year key
+          const data = response.data[selectedYear];
 
           // Transform data into the expected format for chartData
           const formattedData = data.map(entry => ({
@@ -83,7 +82,7 @@ function App() {
         }
       } catch (err) {
         console.error('Error fetching bar chart data:', err);
-        setChartData(null); // Reset chart data on error
+        setChartData(null);
       }
     };
 

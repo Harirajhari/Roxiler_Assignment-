@@ -9,7 +9,7 @@ const BarChart = ({ chartData }) => {
 
   useEffect(() => {
     if (chartInstanceRef.current) {
-      chartInstanceRef.current.destroy(); // Ensure previous chart instance is destroyed
+      chartInstanceRef.current.destroy(); // The previous chart will destroyed
     }
 
     if (chartData && chartContainerRef.current) {
@@ -24,7 +24,7 @@ const BarChart = ({ chartData }) => {
               min: 0, // Start y-axis at 0
               max: 10, // End y-axis at 10
               ticks: {
-                stepSize: 1, // Define step size for y-axis
+                stepSize: 1,
               },
             },
           },
@@ -34,7 +34,7 @@ const BarChart = ({ chartData }) => {
   }, [chartData]);
 
   if (!chartData) {
-    return <p>Loading...</p>; // Handle loading state or null chartData
+    return <p>Loading...</p>;
   }
 
   return (

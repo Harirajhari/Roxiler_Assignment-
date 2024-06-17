@@ -90,7 +90,7 @@ router.get('/productsByMonth', async (req, res) => {
 });
 
 
-//When the month should be the All then only we can search
+//When the month should be the All, then only we can search
 router.get('/transactions', async (req, res) => {
   try {
     const { search, page = 1, perPage = 10 } = req.query;
@@ -136,7 +136,7 @@ router.get('/statistics', async (req, res) => {
       return res.status(400).json({ message: 'Invalid month parameter' });
     }
 
-    // Query to find all transactions in the selected month and year
+
     const transactions = await Product.aggregate([
       {
         $addFields: {
@@ -146,8 +146,8 @@ router.get('/statistics', async (req, res) => {
       },
       {
         $match: {
-          month: monthIndex + 1, // $month returns 1-12, so we match accordingly
-          year: parseInt(year)   // Match the year
+          month: monthIndex + 1,
+          year: parseInt(year)
         }
       }
     ]);
@@ -166,7 +166,7 @@ router.get('/statistics', async (req, res) => {
       }
     });
 
-    // Return the statistics
+
     res.status(200).json({
       totalSaleAmount,
       totalSoldItems,
@@ -271,7 +271,7 @@ router.get('/barchart', async (req, res) => {
 
 router.get('/piechart', async (req, res) => {
   try {
-    const { month, year } = req.query; // Expecting month and year as query parameters
+    const { month, year } = req.query;
     if (!month || !year) {
       return res.status(400).json({ message: 'Month and year parameters are required' });
     }
@@ -291,8 +291,8 @@ router.get('/piechart', async (req, res) => {
       },
       {
         $match: {
-          month: monthIndex + 1, // $month returns 1-12, so we match accordingly
-          year: parseInt(year)   // Match the year
+          month: monthIndex + 1,
+          year: parseInt(year) 
         }
       },
       {
